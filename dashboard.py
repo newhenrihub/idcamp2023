@@ -29,7 +29,7 @@ def create_category_count_df(orders_df,order_items_df,products_df):
     
     return category_count_df
 
-def create_order_customer_df(orders_df,customers_df):
+def create_state_count_df(orders_df,customers_df):
     # merge untuk mendapatkan customer dalam data pemesanan
     order_customer_df = pd.merge(
         left=orders_df,
@@ -44,7 +44,7 @@ def create_order_customer_df(orders_df,customers_df):
     state_count_df.rename(columns={"count":"state_count"},inplace=True)
     state_count_df.head(5)
 
-    return order_customer_df
+    return state_count_df
 
 customers_df = pd.read_csv("https://raw.githubusercontent.com/newhenrihub/idcamp2023/main/submission/data/customers_dataset.csv", delimiter=",")
 orders_df = pd.read_csv("https://raw.githubusercontent.com/newhenrihub/idcamp2023/main/submission/data/orders_dataset.csv", delimiter=",")
@@ -54,7 +54,7 @@ products_df = pd.read_csv("https://raw.githubusercontent.com/newhenrihub/idcamp2
 products_df.dropna(axis=0, inplace=True)
 
 category_count_df = create_category_count_df(orders_df,order_items_df,products_df)
-order_customer_df = create_order_customer_df(orders_df,customers_df)
+state_count_df = create_state_count_df(orders_df,customers_df)
 
 st.header("E-Commerce Dashboard")
 

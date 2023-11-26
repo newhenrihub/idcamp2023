@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 import streamlit as st
 
 customers_df = pd.read_csv("https://raw.githubusercontent.com/newhenrihub/idcamp2023/main/submission/data/customers_dataset.csv", delimiter=",")

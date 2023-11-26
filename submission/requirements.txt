@@ -1,5 +1,4 @@
 babel
 matplotlib
-matplotlib.pyplot
 pandas
 streamlit

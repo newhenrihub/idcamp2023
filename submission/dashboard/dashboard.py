@@ -1,6 +1,6 @@
 import pandas as pd
-import matplotlib.pyplot as plt
 import streamlit as st
+import matplotlib.pyplot as plt
 
 customers_df = pd.read_csv("https://raw.githubusercontent.com/newhenrihub/idcamp2023/main/submission/data/customers_dataset.csv", delimiter=",")
 orders_df = pd.read_csv("https://raw.githubusercontent.com/newhenrihub/idcamp2023/main/submission/data/orders_dataset.csv", delimiter=",")

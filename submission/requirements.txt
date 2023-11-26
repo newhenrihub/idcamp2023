@@ -1,3 +1,4 @@
-streamlit
-pandas
+babel
 matplotlib
+pandas
+streamlit

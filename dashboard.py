@@ -53,7 +53,7 @@ col1, col2 = st.columns(2)
 colors = ["#72BCD4", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3"]
 
 with col1:
-    fig, ax = plt.subplots(figsize=(20, 10))
+    fig, ax = plt.subplots(figsize=(20, 20))
     sns.barplot(y="product_category_name", x="category_count", data=category_count_df.head(5), orient="h", palette=colors, ax=ax)
     ax.set_title("Top 5 product by category", loc="center", fontsize=50)
     ax.set_ylabel(None)
@@ -63,7 +63,7 @@ with col1:
     st.pyplot(fig)
  
 with col2:
-    fig, ax = plt.subplots(figsize=(20, 10))
+    fig, ax = plt.subplots(figsize=(20, 20))
     sns.barplot(y="state_count", x="customer_state", data=state_count_df.head(5), palette=colors, ax=ax)
     ax.set_title("Top 5 most order by state", loc="center", fontsize=50)
     ax.set_ylabel(None)

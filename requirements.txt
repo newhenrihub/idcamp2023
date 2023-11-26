@@ -1,4 +1,3 @@
-babel
 matplotlib
 pandas
 seaborn

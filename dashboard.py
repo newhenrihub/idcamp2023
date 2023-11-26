@@ -58,7 +58,7 @@ with col1:
     ax.set_title("Top 5 product by category", loc="center", fontsize=50)
     ax.set_ylabel(None)
     ax.set_xlabel(None)
-    ax.tick_params(axis='x', labelsize=35)
+    ax.tick_params(axis='x', labelsize=30)
     ax.tick_params(axis='y', labelsize=30)
     st.pyplot(fig)
  
@@ -68,6 +68,6 @@ with col2:
     ax.set_title("Top 5 most order by state", loc="center", fontsize=50)
     ax.set_ylabel(None)
     ax.set_xlabel(None)
-    ax.tick_params(axis='x', labelsize=35)
+    ax.tick_params(axis='x', labelsize=30)
     ax.tick_params(axis='y', labelsize=30)
     st.pyplot(fig)
